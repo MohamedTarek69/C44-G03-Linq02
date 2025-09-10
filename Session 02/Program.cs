@@ -124,7 +124,67 @@ namespace Session_02
 
             #endregion
 
-            
+            #region LINQ - Set Operators
+
+            #region Q1
+            //1.Find the unique Category names from Product List
+
+            //var Result = ProductList.Select(p => p.Category).Distinct();
+
+            //foreach (var category in Result)
+            //    Console.WriteLine(category);
+
+            #endregion
+
+            #region Q2
+            //2.Produce a Sequence containing the unique first letter from both product and customer names.
+
+            //var Result = ProductList.Select(P => P.ProductName[0]).Union(CustomerList.Select(C => C.CustomerName[0]));
+
+            //foreach (var item in Result)
+            //    Console.Write($"{item} ");
+
+            #endregion
+
+            #region Q3
+            //3.Create one sequence that contains the common first letter from both product and customer names.
+
+            //var Result = ProductList.Select(P=> P.ProductName[0]).Intersect(CustomerList.Select(C=> C.CustomerName[0]));
+
+            //foreach (var item in Result)
+            //    Console.Write($"{item} ");
+
+            #endregion
+
+            #region Q4
+            //4.Create one sequence that contains the first letters of product names that are not also first letters of customer names.
+
+            //var Result = ProductList.Select(P => P.ProductName[0]).Except(CustomerList.Select(C => C.CustomerName[0]));
+
+            //foreach (var item in Result)
+            //    Console.Write($"{item} ");
+
+
+            #endregion
+
+            #region Q5
+            //5.Create one sequence that contains the last Three Characters in each name of all customers and products, including any duplicates using takelast
+
+            //var Result = ProductList.Select(p => p.ProductName.TakeLast(3)).Concat(CustomerList.Select(c => c.CustomerName.TakeLast(3)));
+
+            //foreach (var item in Result)
+            //{
+            //    foreach (var ch in item)
+            //        Console.Write(ch);
+            //    Console.WriteLine();
+            //}
+
+
+            #endregion
+
+            #endregion
+
+
 
         }
     }

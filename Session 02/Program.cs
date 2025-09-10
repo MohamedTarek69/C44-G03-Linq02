@@ -8,6 +8,7 @@ using System.Text.RegularExpressions;
 using System.Threading;
 using System.Xml.Linq;
 using static Session_02.ListGenerator;
+using static System.Net.Mime.MediaTypeNames;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 namespace Session_02
 {
@@ -250,8 +251,74 @@ namespace Session_02
 
             #endregion
 
+            #region LINQ - Quantifiers
 
+            #region Q1
+            //1. Determine if any of the words in dictionary_english.txt (Read dictionary_english.txt into Array of String First) contain the substring 'ei'.
 
+            //var Result = DictionaryEnglish.Any(word => word.Contains("ei"));
+
+            //Console.WriteLine($"Result: {Result}");
+
+            #endregion
+
+            #region Q2
+            //2. Return a grouped a list of products only for categories that have at least one product that is out of stock.
+
+            //var Result = from p in ProductList
+            //             group p by p.Category into Category
+            //             where Category.Any(p => p.UnitsInStock == 0)
+            //             select new
+            //             {
+            //                 CategoryName = Category.Key,
+            //                 Products = Category
+            //             };
+
+            //foreach (var Category in Result)
+            //{
+            //    Console.WriteLine(Category.CategoryName);
+            //    foreach (var Product in Category.Products)
+            //    {
+            //        Console.WriteLine($"             ProductID:{Product.ProductID}");
+            //        Console.WriteLine($"             ProductName:{Product.ProductName}");
+            //        Console.WriteLine($"             UnitPrice:{Product.UnitPrice}");
+            //        Console.WriteLine($"             UnitsInStock:{Product.UnitsInStock}");
+            //        Console.WriteLine("            ------------------------------------------");
+            //    }
+            //}
+
+            #endregion
+
+            #region Q3
+            //3. Return a grouped a list of products only for categories that have all of their products in stock.
+
+            //var Result = from p in ProductList
+            //             group p by p.Category into Category
+            //             where Category.All(p => p.UnitsInStock > 0)
+            //             select new
+            //             {
+            //                 CategoryName = Category.Key,
+            //                 Products = Category
+            //             };
+
+            //foreach (var Category in Result)
+            //{
+            //    Console.WriteLine(Category.CategoryName);
+            //    foreach (var Product in Category.Products)
+            //    {
+            //        Console.WriteLine($"             ProductID:{Product.ProductID}");
+            //        Console.WriteLine($"             ProductName:{Product.ProductName}");
+            //        Console.WriteLine($"             UnitPrice:{Product.UnitPrice}");
+            //        Console.WriteLine($"             UnitsInStock:{Product.UnitsInStock}");
+            //        Console.WriteLine("            ------------------------------------------");
+            //    }
+            //}
+
+            #endregion
+
+            #endregion
+
+            
         }
     }
 }

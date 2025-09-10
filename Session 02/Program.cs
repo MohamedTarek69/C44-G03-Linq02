@@ -140,6 +140,98 @@ namespace Session_02
 
             #endregion
 
+            //--------------------------------------- Vedio 07 ---------------------------------------//
+            #region Grouping Operators
+
+            #region Get Products Grouped by Category 
+            //var Result = from P in ProductList
+            //             group P by P.Category;
+
+            //Result = ProductList.GroupBy(p => p.Category);
+
+            //foreach (var Category in Result)
+            //{
+            //    Console.WriteLine(Category.Key);
+            //    foreach (var Product in Category)
+            //        Console.WriteLine($"             {Product.ProductName}");
+            //}
+
+            #endregion
+
+            #region Get Products in Stock Grouped by Category 
+            //var Result = from P in ProductList
+            //             where P.UnitsInStock > 0
+            //             group P by P.Category;
+
+            //Result = ProductList.Where(P => P.UnitsInStock > 0).GroupBy(p => p.Category);
+
+            //foreach (var Category in Result)
+            //{
+            //    Console.WriteLine(Category.Key);
+            //    foreach (var Product in Category)
+            //        Console.WriteLine($"             {Product.ProductName}");
+            //}
+
+            #endregion
+
+            #region  Get Products in Stock Grouped by Category That Contains More Than 10 Products
+            //var Result = from P in ProductList
+            //             where P.UnitsInStock > 0
+            //             group P by P.Category
+            //             into Category
+            //             where Category.Count() > 10
+            //             select Category;
+
+            //foreach (var Category in Result)
+            //{
+            //    Console.WriteLine(Category.Key);
+            //    foreach (var Product in Category)
+            //        Console.WriteLine($"             {Product.ProductName}");
+            //}
+
+            //var Result = ProductList.Where(P => P.UnitsInStock > 0).GroupBy(p => p.Category).Where(Category => Category.Count() > 10);
+
+            //foreach (var Category in Result)
+            //{
+            //    Console.WriteLine(Category.Key);
+            //    foreach (var Product in Category)
+            //        Console.WriteLine($"             {Product.ProductName}");
+            //}
+
+            #endregion
+
+            #region Get Category Name of Products in Stock That Contains More Than 10 Product and Number of Product In Each Category
+            //var Result = from P in ProductList
+            //             where P.UnitsInStock > 0
+            //             group P by P.Category
+            //             into Category
+            //             where Category.Count() > 10
+            //             select new
+            //             {
+            //                 CategoryName = Category.Key,
+            //                 NumberOfProducts = Category.Count(),
+            //             };
+
+            //foreach (var Category in Result)
+            //{
+            //    Console.WriteLine(Category);
+            //}
+
+            //var Result = ProductList.Where(P => P.UnitsInStock > 0).GroupBy(p => p.Category).Where(Category => Category.Count() > 10).Select(Category => new
+            //{
+            //    CategoryName = Category.Key,
+            //    NumberOfProducts = Category.Count()
+            //});
+
+            //foreach (var Category in Result)
+            //{
+            //    Console.WriteLine(Category);
+            //}
+
+            #endregion
+
+            #endregion
+
 
 
 

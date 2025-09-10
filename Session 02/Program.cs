@@ -96,6 +96,29 @@ namespace Session_02
 
             #endregion
 
+            //--------------------------------------- Vedio 05 ---------------------------------------//
+            #region Quantifier Operators
+
+            //List<Product> TestProducts = new List<Product>();
+            //var Result = ProductList.Any(P => P.UnitsInStock == 1000);
+
+            //Console.WriteLine(Result);
+
+            //var Result = ProductList.All(P => P.UnitsInStock >= 0);
+            //Console.WriteLine(Result);
+
+            //var Seq01 = Enumerable.Range(0, 100); // 0 => 99
+
+            //var Seq02 = Enumerable.Range(50, 100); // 50 => 149 
+
+            //var Result = Seq01.SequenceEqual(Seq02);
+
+            //Result = TestProducts.Any();
+            //Console.WriteLine(Result);
+
+            #endregion
+
+
 
 
         }

@@ -318,7 +318,66 @@ namespace Session_02
 
             #endregion
 
-            
+            #region LINQ – Grouping Operators
+
+            #region Q1
+            ////1.Use group by to partition a list of numbers by their remainder when divided by 5
+            ////List<int> numbers = new list<int> { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
+
+            //List<int> numbers = new List<int> { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
+
+            //var Result = numbers.GroupBy(n => n % 5);
+
+            //foreach (var group in Result)
+            //{
+            //    Console.WriteLine($"Numbers with a remainder of {group.Key} when divided by 5:");
+            //    foreach (var number in group)
+            //    {
+            //        Console.WriteLine(number);
+            //    }
+            //}
+
+            #endregion
+
+            #region Q2
+            //2.Uses group by to partition a list of words by their first letter.
+            //Use dictionary_english.txt for Input.
+
+            //var Result = DictionaryEnglish.GroupBy(word => word[0]);
+
+            //foreach (var group in Result)
+            //{
+            //    Console.WriteLine($"Words that start with the letter '{group.Key}':");
+            //    foreach (var word in group)
+            //    {
+            //        Console.WriteLine(word);
+            //    }
+            //}
+
+
+            #endregion
+
+            #region Q3
+            ////3.Consider this Array as an Input
+            ////String[] Arr = { "from", "salt", "earn", " last", "near", "form"};
+            ////Use Group By with a custom comparer that matches words that are consists of the same Characters Together
+
+            //string[] Arr = { "from", "salt", "earn", "last", "near", "form" };
+            //var Result = Arr.GroupBy(w => w.Trim(), new StringCharsEqualityComparer());
+
+            //foreach (var group in Result)
+            //{
+            //    foreach (var word in group)
+            //    {
+            //        Console.WriteLine(word);
+            //    }
+            //    Console.WriteLine("...");
+            //}
+
+            #endregion
+
+            #endregion
+
         }
     }
 }

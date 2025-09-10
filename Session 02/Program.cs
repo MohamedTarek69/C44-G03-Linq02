@@ -118,6 +118,28 @@ namespace Session_02
 
             #endregion
 
+            //--------------------------------------- Vedio 06 ---------------------------------------//
+            #region Zipping Operator
+
+            //string[] Names = { "Ahmed", "Mona", "Aya", "Ali", "Mohamed" };
+
+            //int[] Numbers = Enumerable.Range(1, 10).ToArray(); // 1 => 10
+
+            //char[] Chars = { 'A', 'B', 'C', 'D', 'E' };
+
+
+            //var Result = Names.Zip(Numbers,(Name,Number) => new {index = Number , Name = Name});
+
+            //foreach (var i in Result)
+            //    Console.WriteLine(i);
+
+            //var Result = Names.Zip(Numbers, Chars);
+
+            //foreach (var i in Result)
+            //    Console.WriteLine(i);
+
+            #endregion
+
 
 
 

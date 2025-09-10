@@ -232,7 +232,47 @@ namespace Session_02
 
             #endregion
 
+            //--------------------------------------- Vedio 08 ---------------------------------------//
+            #region Partitioning Operartor
 
+            //int[] Numbers = { 5, 4, 1, 9, 7, 6, 2, 3 };
+
+            //var Result = ProductList.Where(P => P.UnitsInStock > 0).Take(10);
+
+            //foreach (var item in Result)
+            //    Console.WriteLine(item);
+
+            //var Result = ProductList.TakeLast(10);
+
+            //foreach (var item in Result)
+            //    Console.WriteLine(item);
+
+            //var Result = ProductList.Where(P => P.UnitsInStock == 0).Skip(2);
+
+            //foreach (var item in Result)
+            //    Console.WriteLine(item);
+
+            //var Result = ProductList.Where(P => P.UnitsInStock == 0).SkipLast(2);
+
+            //foreach (var item in Result)
+            //    Console.WriteLine(item);
+
+            //var Result = Numbers.TakeWhile((Number, I) => Number > I);
+
+            //foreach (var item in Result)
+            //    Console.WriteLine(item);
+
+            //var Result = Numbers.SkipWhile(N => N < 9);
+
+            //foreach (var item in Result)
+            //    Console.WriteLine(item);
+
+            //var Result = ProductList.Skip(20).Take(10);
+
+            //foreach (var item in Result)
+            //    Console.WriteLine(item);
+
+            #endregion
 
 
         }

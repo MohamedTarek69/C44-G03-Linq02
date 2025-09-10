@@ -1,6 +1,7 @@
 ﻿using static Session_02.ListGenerator;
 using Session_02.Data;
 using System.Collections;
+using System.Text.RegularExpressions;
 namespace Session_02
 {
     internal class Program
@@ -273,6 +274,40 @@ namespace Session_02
             //    Console.WriteLine(item);
 
             #endregion
+
+            //--------------------------------------- Vedio 09 ---------------------------------------//
+            #region Let and Into [valid with Query Syntax Only]
+
+            //List<string> Names = new List<string>()
+            //{
+            //    "Omar",
+            //    "Ahmed",
+            //    "Sally",
+            //    "Mohamed",
+            //    "Ali"
+            //};
+
+            //// A , O , U , I , E 
+
+            //var Result = from N in Names
+            //             select Regex.Replace(N, "[AOUIEaouie]", string.Empty)
+            //             into NoVowelNames
+            //             where NoVowelNames.Length > 3
+            //             select NoVowelNames;
+
+            //foreach (var N in Result)
+            //    Console.WriteLine(N);
+
+            //var Result = from N in Names
+            //             let NoVowelNames = Regex.Replace(N, "[AOUIEaouie]", string.Empty)
+            //             where NoVowelNames.Length > 3
+            //             select NoVowelNames;
+
+            //foreach (var N in Result)
+            //    Console.WriteLine(N);
+
+            #endregion
+
 
 
         }
